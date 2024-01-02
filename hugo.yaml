@@ -108,18 +108,21 @@ menus:
   - name: Guides
     url: /get-started/overview/
     weight: 1
+  - name: Learn
+    url: /learn/overview/
+    weight: 2
   - name: Manuals
     url: /desktop/
-    weight: 2
+    weight: 3
   - name: Reference
     url: /reference/
-    weight: 3
+    weight: 4
   - name: Samples
     url: /samples/
-    weight: 4
+    weight: 5
   - name: FAQ
     url: /faq/
-    weight: 5
+    weight: 6
 
   footer:
     - url: https://www.docker.com/products

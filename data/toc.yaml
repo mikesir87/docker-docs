@@ -1,52 +1,18 @@
 Guides:
 - title: Docker overview
-  path: /get-started/overview/
-- title: Get Docker
-  path: /get-docker/
-- sectiontitle: Get started
+  path: /guides/get-started/
+- sectiontitle: Getting started
   section:
-    - title: "Overview"
-      path: /guides/get-started/
-    - sectiontitle: "Quick hands-on guides"
-      section:
-      - title: "What is a container?"
-        path: /guides/walkthroughs/what-is-a-container/
-      - title: "Run a container"
-        path: /guides/walkthroughs/run-a-container/
-      - title: "Run Docker Hub images"
-        path: /guides/walkthroughs/run-hub-images/
-      - title: "Run multi-container applications"
-        path: /guides/walkthroughs/multi-container-apps/
-      - title: "Persist container data"
-        path: /guides/walkthroughs/persist-data/
-      - title: "Access a local folder"
-        path: /guides/walkthroughs/access-local-folder/
-      - title: "Containerize your application"
-        path: /guides/walkthroughs/containerize-your-app/
-      - title: "Publish your image"
-        path: /guides/walkthroughs/publish-your-image/
-    - sectiontitle: "Getting started guide"
-      section:
-      - title: "Part 1: Overview"
-        path: /get-started/
-      - title: "Part 2: Containerize an application"
-        path: /get-started/02_our_app/
-      - title: "Part 3: Update the application"
-        path: /get-started/03_updating_app/
-      - title: "Part 4: Share the application"
-        path: /get-started/04_sharing_app/
-      - title: "Part 5: Persist the DB"
-        path: /get-started/05_persisting_data/
-      - title: "Part 6: Use bind mounts"
-        path: /get-started/06_bind_mounts/
-      - title: "Part 7: Multi-container apps"
-        path: /get-started/07_multi_container/
-      - title: "Part 8: Use Docker Compose"
-        path: /get-started/08_using_compose/
-      - title: "Part 9: Image-building best practices"
-        path: /get-started/09_image_best/
-      - title: "Part 10: What next?"
-        path: /get-started/11_what_next/
+    - title: Get Docker
+      path: /getting-started/get-docker/
+    - title: Start developing
+      path: /getting-started/start-developing/
+    - title: Analyzing and fixing issues
+      path: /getting-started/analyzing-and-fixing-issues/
+    - title: Building and deploying
+      path: /getting-started/build-and-deploy/
+    - title: What's next?
+      path: /getting-started/whats-next/
 
 - sectiontitle: Language-specific guides
   section:
@@ -152,56 +118,52 @@ Guides:
       path: /language/php/configure-ci-cd/
     - title: "Test your deployment"
       path: /language/php/deploy/
-- sectiontitle: Develop with Docker
+    
+- sectiontitle: Use-case guides
   section:
-  - path: /develop/
-    title: Overview
-  - path: /develop/dev-best-practices/
-    title: Development best practices
-  - sectiontitle: Dockerfile best practices
-    section:
-    - path: /develop/develop-images/dockerfile_best-practices/
-      title: Overview
-    - path: /develop/develop-images/guidelines/
-      title: General guidelines 
-    - path: /develop/develop-images/instructions/
-      title: Best practices for Dockerfile instructions
-  - path: /develop/security-best-practices/
-    title: Security best practices
+    - title: Secure Software Supply Chains
+      path: /guides/secure-software-supply-chains/
+    - title: Supporting Data Science Applications
+      path: /guides/data-science-applications/
+    - sectiontitle: Building an AI/ML app
+      section:
+        - title: Overview
+          path: /guides/docker-for-ai-ml/
+        - title: Choosing and deploying a LLM
+          path: /guides/docker-for-ai-ml/choosing-an-llm
+        - title: Creating a simple chat bot
+          path: /guides/docker-for-ai-ml/creating-a-chat-bot
+        - title: Adding custom data
+          path: /guides/docker-for-ai-ml/adding-custom-data
+        - title: Packaging and deploying the app
+          path: /guides/docker-for-ai-ml/deploying-the-app
 
-- sectiontitle: Build with Docker
+
+- sectiontitle: Best practice guides
   section:
   - path: /build/guide/
     title: Overview
-  - path: /build/guide/intro/
-    title: 1. Introduction
-  - path: /build/guide/layers/
-    title: 2. Layers
-  - path: /build/guide/multi-stage/
-    title: 3. Multi-stage
-  - path: /build/guide/mounts/
-    title: 4. Mounts
-  - path: /build/guide/build-args/
-    title: 5. Build arguments
-  - path: /build/guide/export/
-    title: 6. Export binaries
-  - path: /build/guide/test/
-    title: 7. Test
-  - path: /build/guide/multi-platform/
-    title: 8. Multi-platform
-  - path: /build/guide/next-steps/
-    title: Next steps
+  - sectiontitle: Development best practices
+    section:
+    - path: /build/guide/
+      title: Decreasing feedback loops
+    - path: /build/guide/
+      title: Build once. Promote everywhere.
+    - path: /build/guide/
+      title: Testing with containers
+  - sectiontitle: Security best practices
+    section:
+    - path: /build/guide/
+      title: Dockerfile practices
+    - path: /build/guide/
+      title: Image building in CI/CD
+    - path: /build/guide/
+      title: Running containers
+    - path: /build/guide/
+      title: Securing dev workstations
+    - path: /build/guide/
+      title: Org/Team management
 
-- sectiontitle: Deployment and orchestration
-  section:
-  - title: "Overview"
-    path: /get-started/orchestration/
-  - title: "Deploy to Kubernetes"
-    path: /get-started/kube-deploy/
-  - title: "Deploy to Swarm"
-    path: /get-started/swarm-deploy/
-  - title: Cloud integrations
-    path: /cloud/
 - path: /get-started/resources/
   title: "Educational resources"
 
@@ -255,6 +217,63 @@ Guides:
       title: Buttons
   - path: /contribute/checklist/
     title: Writing checklist
+
+Learn:
+  - title: "Overview"
+    path: /learn/overview/
+  - sectiontitle: "The basics"
+    section:
+    - title: "What is a container?"
+      path: /guides/walkthroughs/what-is-a-container/
+    - title: "What is an image?"
+      path: /guides/walkthroughs/what-is-an-image/
+    - title: "Finding images to use"
+      path: /guides/walkthroughs/where-can-i-find-images/
+    - title: "Building your own images"
+      path: /guides/walkthroughs/build-your-own-image/
+    - title: "Publishing (or sharing) images"
+      path: /guides/walkthroughs/publish-your-image/
+    - title: "Connecting multiple containers"
+      path: /guides/walkthroughs/multi-container-apps/
+    - title: "Persisting container data"
+      path: /guides/walkthroughs/persist-data/
+    - title: "Sharing local files with my container"
+      path: /guides/walkthroughs/access-local-folder/
+    - title: "Containerize your application"
+      path: /guides/walkthroughs/containerize-your-app/
+  - sectiontitle: Build
+    section:
+    - title: "Overview"
+      path: /guides/build/overview
+    - title: "Maximizing build cache usage"
+      path: /guides/build/overview
+    - title: "Multi-stage builds"
+      path: /guides/build/overview
+    - title: "Building for multiple architectures"
+      path: /guides/build/overview
+    - title: "Using remote builders"
+      path: /guides/build/overview
+    - title: "Injecting secrets during a build"
+      path: /guides/build/overview
+    - title: "Troubleshooting failing builds"
+      path: /guides/build/overview
+  - sectiontitle: Share
+  - sectiontitle: Run
+  - sectiontitle: Test
+  - sectiontitle: Verify
+  - sectiontitle: Deploy
+    section:
+    - title: "Overview"
+      path: /get-started/kube-deploy/
+    - title: "Configuring containers"
+      path: /get-started/kube-deploy/
+    - title: "Deploy to Kubernetes"
+      path: /get-started/kube-deploy/
+    - title: "Deploy to Swarm"
+      path: /get-started/swarm-deploy/
+    - title: Cloud integrations
+      path: /cloud/
+
 
 Reference:
 - path: /reference/
