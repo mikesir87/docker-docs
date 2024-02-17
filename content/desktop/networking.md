@@ -15,10 +15,7 @@ aliases:
 Docker Desktop provides several networking features to make it easier to
 use.
 
-## Networking features
-
-{{< tabs >}}
-{{< tab name="For all platforms" >}}
+## Features for all platforms
 
 ### VPN Passthrough
 
@@ -53,8 +50,7 @@ See:
 - [Proxies on Mac](settings/mac.md#proxies)
 - [Proxies on Windows](settings/windows.md#proxies)
 
-{{< /tab >}}
-{{< tab name="For Mac and Linux" >}}
+## Features for Mac and Linux
 
 ### SSH agent forwarding
 
@@ -86,10 +82,7 @@ services:
       - SSH_AUTH_SOCK=/run/host-services/ssh-auth.sock
  ```
 
-{{< /tab >}}
-{{< /tabs >}}
-
-## Known limitations
+## Known limitations for all platforms
 
 ### Changing internal IP addresses
 
@@ -108,10 +101,10 @@ ping the Windows containers.
 
 ### Per-container IP addressing is not possible
 
-This is because the Docker `bridge` network is not reachable from the host.
-However if you are a Windows user, per-container IP addressing is possible with Windows containers.
+The docker bridge network is not reachable from the host.
+However if you are a Windows user, it works with Windows containers.
 
-## Use cases and workarounds 
+## Use cases and workarounds for all platforms
 
 ### I want to connect from a container to a service on the host
 
@@ -138,7 +131,7 @@ If you have installed Python on your machine, use the following instructions as 
     # exit
     ```
 
-### I want to connect to a container from the host
+#### I want to connect to a container from the host
 
 Port forwarding works for `localhost`. `--publish`, `-p`, or `-P` all work.
 Ports exposed from Linux are forwarded to the host.

@@ -38,16 +38,20 @@ To integrate Docker Scout with SonarQube, ensure that:
 
 ## Enable the SonarQube integration
 
-1. Go to the [SonarQube integrations page](https://scout.docker.com/settings/integrations/sonarqube/)
-   on the Docker Scout Dashboard.
-2. In the **How to integrate** section, enter a configuration name for this
+1. Go to [Integrations](https://scout.docker.com/settings/integrations/) on the
+   Docker Scout Dashboard.
+2. Select the **See all integration options** filter.
+3. Find the SonarQube integration in the **Code quality** section, and
+   select **Integrate**.
+4. In the **How to integrate** section, enter a configuration name for this
    integration. Docker Scout uses this label as a display name for the
    integration, and to name the webhook.
-3. Select **Next**.
-4. Enter the configuration details for your SonarQube instance. Docker Scout
+5. Select **Next**.
+6. Enter the configuration details for your SonarQube instance. Docker Scout
    uses this information to create SonarQube webhook.
 
-   In SonarQube, [generate a new **User token**](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/#generating-a-token).
+   In SonarQube, [generate a new **User
+   token**](https://docs.sonarsource.com/sonarqube/9.8/user-guide/user-account/generating-and-using-tokens/#generating-a-token).
    The token requires 'Administer' permission on the specified project, or
    global 'Administer' permission.
 
@@ -55,12 +59,12 @@ To integrate Docker Scout with SonarQube, ensure that:
    organization. The SonarQube organization is required if you're using
    SonarCloud.
 
-5. Select **Enable configuration**.
+7. Select **Enable configuration**.
 
    Docker Scout performs a connection test to verify that the provided details
    are correct, and that the token has the necessary permissions.
 
-6. After a successful connection test, you're redirected to the SonarQube
+8. After a successful connection test, you're redirected to the SonarQube
    integration overview, which lists all your SonarQube integrations and their
    statuses.
 

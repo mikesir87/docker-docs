@@ -59,4 +59,5 @@ For braced expressions, the following formats are supported:
   - `${VAR:+replacement}` -> `replacement` if `VAR` is set and non-empty, otherwise empty
   - `${VAR+replacement}` -> `replacement` if `VAR` is set, otherwise empty
 
-For more information, see [Interpolation](../compose-file/12-interpolation.md) in the Compose Specification. 
+
+

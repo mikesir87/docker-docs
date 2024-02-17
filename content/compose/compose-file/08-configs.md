@@ -25,10 +25,6 @@ The top-level `configs` declaration defines or references configuration data tha
   reference configs that contain special characters. The name is used as is
   and will **not** be scoped with the project name.
 
-> **Note**
->
-> `environment` and `content` attributes are available with Docker Compose version 2.23.1 and later.
-
 ## Example 1
 
 `<project_name>_http_config` is created when the application is deployed,
@@ -51,7 +47,8 @@ configs:
 ## Example 2
 
 `<project_name>_app_config` is created when the application is deployed,
-by registering the inlined content as the configuration data. This means Compose infers variables when creating the config, which allows you to
+by registering the inlined content as the configuration data. This comes with the
+benefits Compose will infer variables when creating the config, which allows to
 adjust content according to service configuration:
 
 ```yml
@@ -68,7 +65,8 @@ configs:
 External configs lookup can also use a distinct key by specifying a `name`. 
 
 The following
-example modifies the previous one to look up a config using the parameter `HTTP_CONFIG_KEY`. The actual lookup key is set at deployment time by the [interpolation](12-interpolation.md) of
+example modifies the previous one to look up a config using the parameter `HTTP_CONFIG_KEY`. The
+the actual lookup key will is set at deployment time by the [interpolation](12-interpolation.md) of
 variables, but exposed to containers as hard-coded ID `http_config`.
 
 ```yml

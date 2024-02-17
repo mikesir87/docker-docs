@@ -11,12 +11,6 @@ aliases:
 
 For more detailed information, see the [release notes in the Compose repo](https://github.com/docker/compose/releases/).
 
-## 2.24.5
-{{< release-date date="2024-01-30" >}}
-
-### Bug fixes and enhancements
-- Fixed "failed to solve: changes out of order" errors when building images on Windows.
-
 ## 2.24.4
 {{< release-date date="2024-01-29" >}}
 
@@ -2865,7 +2859,7 @@ naming scheme accordingly before upgrading.
 ## 1.6.0
 (2016-01-15)
 
-### Major Features
+### Major Features:
 
 -   Compose 1.6 introduces a new format for `docker-compose.yml` which lets
     you define networks and volumes in the Compose file as well as services. It
@@ -2913,7 +2907,7 @@ naming scheme accordingly before upgrading.
     `docker-compose up SERVICE` on a service with dependencies, those are started
     as well.
 
-### New Features
+### New Features:
 
 -   Added a new command `config` which validates and prints the Compose
     configuration after interpolating variables, resolving relative paths, and

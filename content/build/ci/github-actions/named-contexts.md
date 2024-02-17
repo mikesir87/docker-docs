@@ -42,7 +42,7 @@ jobs:
         with:
           context: .
           build-contexts: |
-            alpine=docker-image://alpine:{{% param "example_alpine_version" %}}
+            alpine=docker-image://alpine:3.16
           tags: myimage:latest
 ```
 
