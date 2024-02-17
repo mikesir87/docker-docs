@@ -57,3 +57,5 @@ Replace placeholders with your actual information:
 * `/path/to/other_secrets`: Add similar lines for any other secrets you need during the build, each with a unique ID and file location
 
 This approach allows you to securely inject secrets into your Node.js app's build process using BuildKit without compromising the security of your sensitive information.
+
+{{< button text="Troubleshooting Failing Builds" url="troubleshooting-failing-builds" >}}
