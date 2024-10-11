@@ -31,7 +31,7 @@ The following prerequisites are required to follow along with this how-to guide:
 
 One of the unique features of Traefik is its ability to be configured in many ways. When using the Docker provider, Traefik gets its configuration from other running containers using [labels](https://docs.docker.com/config/labels-custom-metadata/). Traefik will watch engine events (for container starts and stops), extract the labels, and update its configuration.
 
-The two most common Traefik-monitored labels will be ([view the full list here](https://doc.traefik.io/traefik/routing/providers/docker/)):
+While there are [many Traefik-monitored labels](https://doc.traefik.io/traefik/routing/providers/docker/), the two most common will be:
 
 - `traefik.http.routers.<service-name>.rule` - used to indicate the routing rule ([view all of the available rules here](https://doc.traefik.io/traefik/routing/routers/#rule))
 - `traefik.http.services.<service-name>.loadbalancer.server.port` - used to indicate the port Traefik should forward the request to. Note that this container port does NOT need to be exposed on your host machine ([read about port detection here](https://doc.traefik.io/traefik/providers/docker/#port-detection))
