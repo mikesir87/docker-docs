@@ -1,9 +1,13 @@
 ---
-description: Use Traefik to easily route traffic between multiple containers or non-containerized workloads
-keywords: traefik, container-supported development
 title: HTTP routing with Traefik
+description: &desc Use Traefik to easily route traffic between multiple containers or non-containerized workloads
+keywords: traefik, container-supported development
 linktitle: HTTP routing with Traefik
-toc_max: 2
+summary: *desc
+levels: [intermediate]
+subjects: [networking]
+params:
+  time: 20 minutes
 ---
 
 ## Introduction
